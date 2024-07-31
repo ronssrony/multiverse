@@ -1,0 +1,1091 @@
+*{
+    padding: 0%; 
+    margin: 0%;
+}
+html,body,#main{
+    height: 100%; 
+    width: 100%;
+    color: black;
+    scroll-behavior: smooth;
+    
+}
+::selection{
+    background-color: rgb(237, 100, 100);
+    color: white;
+}
+nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 8%;
+  
+}
+
+nav ul li{
+    list-style-type: none; 
+    display: inline-block; 
+    padding: 0% 18px;
+    border-radius: 10px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+nav ul li a::after{
+    content: '';
+    border-top: 2px solid black;
+    width: 0%;
+   
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    border-top: 2px solid rgb(0, 0, 0);
+    transition: .8s;
+}
+
+
+
+
+
+nav h2{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: fantasy;
+}
+nav h2::first-letter{
+    color: #f9004f;
+}
+
+#btn{
+    text-decoration: none; 
+    font-size: 18px; 
+    padding:18px 20px ;
+    border: 2px solid transparent ;
+    border-color: #f9004f;
+    border-radius: 30px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    transition: .4s;
+}
+
+#btn:hover{
+    background-color:#f9004f;
+    color: white;
+    transition: .4s;
+
+}
+
+#shuffle{
+
+  width: 100px;
+  height: 15px; 
+  margin-right: .7vw;  
+  font-size: x-small;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  cursor:pointer;
+  opacity: .7;
+     
+}
+#shuffle p{
+    background-color: aliceblue;
+    border-radius: 4px;
+    font-family:cursive;
+}
+#shuffle p::before{
+    content: ""; 
+    border: 1px solid rgb(180, 216, 248);
+    font-size: xx-small;
+}
+
+#shuffle p:active{
+    transform: scale(.9);
+
+}
+#shuffle p:first-child:active{
+    transform: scale(.8);
+}
+#shoppinglist{
+    position: relative;
+    width: 100%;
+    
+    display: flex;
+    
+}
+
+#showcase{
+    width: 60vw; 
+    height:30vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 13px;
+    position: sticky;
+    top:0% ;
+}
+
+
+
+.item{ 
+     min-height: 115px;
+     max-height: 115px;
+     height: 115px;
+     min-width: 110px;
+     max-width: 110px;
+     width: 110px;
+     background-color: aliceblue;
+     position:relative ;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     border-radius: 1vw;
+     padding: .2vw;
+} 
+#itemimg{
+    height: 70% ;
+    width:  100%;
+    
+    position: relative;
+}
+#itemimg img{
+    border-radius: .5vw;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;   
+
+}
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+#price button{
+    padding: .4vw .8vw;
+ 
+    border-radius: 50%;
+    border:none ;
+}
+#price button:active{
+    transform: scale(.95);
+}
+
+#additems{
+    padding:0% 3% 0% 8%;
+    
+    
+    
+}
+
+
+#lineitem{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18vw;
+    
+}
+
+#lineitem h2{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: 600;
+  
+}
+
+#lineitem p{
+    font-size: larger; 
+    font-weight: 600; 
+    margin-left: 5px;
+}
+#lineitem p::first-letter{
+    font-size: small;
+    margin-right: 2px;
+    font-weight: 200;
+}
+#lineitem button {
+ 
+     padding: .8vw;
+     border-radius: 30%;
+     border: none;
+     font-weight: 500;
+
+
+}
+#item button:hover{
+    background-color: aliceblue;
+    color: #f9004f;
+  
+}
+#item h2 { 
+    padding: 10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+
+}
+
+#shoppinglist form input[type='text']
+{   
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+   
+    font-size: large;
+    padding: 4px 2px;
+}
+#shoppinglist form input{
+    width: auto;
+    min-height: 30px;
+    margin-bottom: 20px;
+    
+}
+
+#shoppinglist h1{
+    
+    border-left: 2px solid black;
+    padding-left:4px ;
+    margin-bottom: 8px;
+    border-color: #f9004f;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#submit
+{
+    font-size: medium;
+    margin-left: -6vw;
+    padding: .5vw;
+    border-radius: 20px;
+    background-color: aliceblue;
+  
+    border: none;
+    cursor: pointer;
+    
+}
+
+#submit:active{
+   transform: scale(.95);
+}
+
+
+#showitem{
+    position:absolute ;
+    width: 25vw ;
+    height: 26vw ;
+    background-color: aliceblue;
+    left: 8%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+    z-index: 9;
+
+   
+
+}
+#showitem img{
+    height: 75%;
+    width: 97%;
+    object-fit: cover; 
+ 
+    border-radius: 1vw;
+   
+}
+#detail{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    gap: 6vw;
+    font-size: 1.5vw ;
+    font-family: gilroy;
+}
+
+#searchbar{
+    width: 18vw;
+    max-height: 20vw; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    left: 8%;
+    top: 32%;
+  
+}
+#resultwrapper{
+    gap: .6vw;
+}
+#result{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    transition: .4s;
+    border-radius: 5px;
+    
+}
+#result:hover{
+    background-color: aliceblue;
+    transition: .4s;
+
+}    
+#resultimg{
+    width: 3vw;
+    height: 2vw;
+}
+
+#resultimg img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center;
+    transition: .4s;
+    
+}
+#resultimg img:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+
+
+
+#techno{
+    padding: 0% 8%; 
+    position: relative;
+   
+}
+#techno h2{
+  
+   font-size: 1.8vw;
+   padding-left:4px ;
+   letter-spacing: 1px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-bottom: .8vw;
+   
+   
+}
+
+
+#forlex{
+    display:flex ;
+    align-items: flex-start;
+    
+}
+#forms{
+
+    margin-left: 5vw;
+
+    position: relative;
+}
+
+.payments{
+   height: 100%; 
+   width: 100%;
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   justify-content: space-around;
+   padding:3vw 2vw;
+   background-color: aliceblue;
+   border-radius: 1vw;
+
+}
+#card input[name="cardnumber"],#card input[name="name"]{
+   width: 100%;
+   padding: .5vw;
+  
+}
+#card input{
+    font-weight: 600; 
+    border:none ;
+    background-color: aliceblue;
+    border-bottom: 1.5px solid black;
+}
+#card input:focus{
+    outline: none;
+}
+.paynow{
+    width: 50%;
+    padding: .5vw;
+    margin-top: 2vw;
+    border: none;
+    border-radius: 10px; 
+    font-size: 15px;
+    background-color: rgb(223, 238, 252);
+    font-weight: 550; 
+    cursor: pointer;
+    
+}
+
+#mmyy input{
+    padding: .5vw; 
+}
+#mmyy input:first-child{
+    margin-right: 5vw;
+}
+
+#cardimage{
+    height: 20%;
+    width: 20vw; 
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3vw;
+    margin-top: 1vw;
+   
+}
+
+.cardpic{
+   height: 30%; 
+   width: 15%;
+   overflow: hidden;
+   position:relative ;
+}
+.cardpic img{
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover; 
+  object-position: center;
+}
+
+#cash{
+
+margin-left: 3vw;
+
+}
+
+#cash input{
+    width: 50%;
+    padding: .5vw; 
+    margin: 5px ; 
+    border: none; 
+    background-color: aliceblue; 
+    border-bottom: 2px solid black; 
+    font-size: 18;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+#cash input:focus{
+    outline: none;
+}
+#check{
+    margin-left: 1.5vw;
+    height: 20%;
+}
+#fullname{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+#check input{
+    
+    outline: none;
+    border: none; 
+    background-color: aliceblue; 
+    border-bottom: 1.5px solid black; 
+    font-size: 18;
+    font-weight: 600;
+   
+}
+
+#check input[name='cardnumber']{
+    width: 84%;
+}
+#check input:focus{
+    outline: none;
+}
+#check{
+    position: relative;
+}
+#fullname input{
+    width: 40%;
+    
+}
+#payment-method{                                                                                                                              
+    font-size: 1.3vw;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    background: transparent;
+    background-color: transparent;
+    
+}
+
+
+/*-----------------------------------------------------------*/
+#check,#cash,#music,shoppinglist,#fetures,#mixcards,#techno,#about{
+    display: none;
+}
+/*-----------------------------------------------------------*/
+
+
+#music{
+    padding: 0% 8%;
+   position: relative;
+
+  
+}
+
+.sidebar{
+    position: fixed;
+    border: 2px solid transparent ;   
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+   
+}
+
+.namelist li{
+    list-style-type: none; 
+    padding: .5vw 0vw;
+    transition: transform 0.4s;
+}
+.namelist li a{
+    text-decoration: none; 
+    font-size: 1.25vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 540;
+    color: black;
+}
+.namelist li a:hover{
+    color: #f9004f;
+    
+}
+.namelist li:hover{
+    transform: scale(1.06);
+    transition: 0.5s;
+   
+}
+
+.sidebar h2{
+    font-size: 2.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .4vw; 
+}
+.sidebar h2 i{
+     color: #f9004f;
+     font-size: 3vw;
+
+}
+
+.playpause button{
+     
+    font-size: 2.5vw;
+    padding: 1vh;
+    background-color: transparent;
+    border: none;
+    margin: 1vw;
+
+    border-radius: 50%;
+    color:#f9004fa9 ;
+    border-color:white;
+}
+
+
+#player{
+    box-shadow: 2px 2px 30px -10px #f9004f82 ;
+   
+    left: 30%;
+    background-color: aliceblue;
+    /* background:conic-gradient(#f9004f,rgb(0, 0, 0),#f9004f);  */
+    height:25vw;
+    width: 20vw;
+    margin-left: 8vw;
+    border-radius: 2vw;
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+/* #player::after{
+    content: ""; 
+    height: 98%; 
+    border-radius: 2vw;
+    width: 98%; 
+    position: absolute;
+    box-shadow: 5px 6px 10px 5px #f9007c ;
+    animation-name: playmusic;
+    z-index: -1;
+    
+    
+}
+
+@keyframes playmusic {
+   0%{
+
+   }
+    
+} */
+
+#musicimage{
+    height: 55%;
+    width: 55%;
+    background-color: white;
+    margin-top:2.5vw ;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+#musicimage img{
+    height: 100%; 
+    width: 100%;
+    object-fit: cover; 
+
+}
+
+
+
+
+
+#fetures{
+    height: calc(100% - 30%) ;
+  
+    padding: 0% 8%;
+    position: relative;
+}
+.flex{
+    height: 100%;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+}
+
+.left,.right{
+    border-radius: 1vw; 
+   
+
+}
+.left{
+    width: 50% ;
+    height: 95%;
+    background-color: cornflowerblue;
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}
+.right{
+    width: 50% ;
+    height: 95%;
+    background-color: crimson;
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.request{
+    width: 40%;
+    height: 70%; 
+    background-color: white;
+    border-radius: 1vw;
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    
+   
+}
+.request img{
+    height: 50%;
+    width: 90%;
+    border-radius: 1vw;
+    margin-top: .8vw;
+    object-position: center;
+    object-fit: cover;
+    
+   
+ }
+ 
+ .request h2{
+     text-align: center; 
+     font-size: 1.5vw;
+     margin-bottom: 1.5vw;
+     
+ }
+ .request #status {
+     margin-bottom: 1vw;
+     font-size: medium;
+ 
+ }
+ .request button{ 
+     padding: .5vw;
+     border-radius: 1vw; 
+     border: none; 
+     font-weight: 600; 
+     font-family: 'Times New Roman', Times, serif; 
+     background-color: cornflowerblue; 
+     color: white;
+     cursor: pointer;
+ }
+ 
+.like i{
+    color:white ;
+    font-size: 2.5vw; 
+    opacity: 0;
+    transition: all ease .5s;
+    transform: scale(0);
+}
+
+.like{
+    width: 40%;
+    height: 70%; 
+    background-color: white;
+    border-radius: 1vw;
+    background-image: url('https://img.freepik.com/free-photo/non-binary-person-looking-away-with-copy-space_23-2148757514.jpg?t=st=1721982195~exp=1721985795~hmac=298370c70216966508dd6ad643e0c67d421188565ee18cd7f233a5352a8f292e&w=826');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border: none;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+}
+
+#mixcards{
+    padding: 0% 8%; 
+   
+    position:relative; 
+
+    height: calc(100% - 30%)
+
+
+}
+.box{
+    margin-bottom: 2vw  ;
+    
+    width: 100%; 
+    height: 25%;
+    border-radius: 10px;
+    position:relative; 
+}
+  
+
+
+
+#reactbox{
+    position: relative;
+    display: none;
+
+    
+}
+
+.react{
+    height: 35%; 
+    width: 3.3%; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-left: .4vw;
+    margin-top: 2vw;
+    position: relative;
+    transition: .4s;
+
+    
+}
+
+.react:hover{
+    transform: scale(1.3);
+    transition: .4s;
+}
+.react:first-child{
+    margin-left: 3vw;
+}
+
+
+.react img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    display: block;
+    overflow: visible;
+  }
+
+#reacbutton
+{
+  position: absolute;
+  left:3% ;
+  bottom: 2%; 
+  padding: .5vw;
+  border-radius: 1vw;
+  border: .5px solid rgba(0, 0, 0, 0.536);
+  transition: .4s;
+}
+
+#countbutton{
+    position: absolute;
+    left: 8%;
+    bottom: 6%; 
+    padding:.2vw .3vw ;
+    border-radius: .5vw;
+    border: none;
+    transition: .4s;;
+    cursor: pointer;
+    
+}
+#countbutton:hover{
+    transform: scale(1.10);
+}
+#reacbutton:hover{
+    box-shadow: 1px 1px 7px -1px ;
+    transition: .4s;
+   
+
+}
+
+#reactcard{
+    position: relative; 
+  
+   width: 100%;
+   height: 100%;
+   display: none;
+}
+.perclick{
+    height: 35%; 
+    width: 3.3%; 
+    display: inline-block;
+    margin-top: 2.5vw;
+    position: relative;
+    transition: .4s;
+}
+.perclick:hover{
+    color:#f9004f ;
+    cursor: pointer;
+}
+.imgicon{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    position: relative
+}
+.imgicon img{
+    height:50% ;
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.perclick:first-child{
+    margin-left: 6.3vw;
+}
+.imgicon p{
+    font-size:small;
+    font-weight: 600;
+}
+
+#box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#anime{
+    width: 8%; 
+    height: 90%;
+    background-color: aliceblue; 
+    position:relative ;
+    transition: .5s;
+    border-radius: 50%;
+   
+}
+#circular{
+    width: 50%;
+    height: 50%;
+    background-color:black ;
+    border-top-left-radius: 100%;
+    transform: rotateZ(0deg);
+    transform-origin: right bottom;
+    animation-name: circular ;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out 10s;
+    
+    transition: 1s;
+
+}
+
+
+
+@keyframes circular {
+    
+   0%{
+      opacity: 1; 
+   }
+   8%,18%{
+    opacity: 0;
+   }
+   25%{
+       opacity: 1 ;
+       transform:rotateZ(90deg);
+
+   }
+   35%,45%{
+    opacity: 0;
+   }
+   50%{
+    opacity: 1;
+    transform: rotateZ(180deg);
+   }
+   60%,70%{
+    opacity: 0;
+   }
+   75%{
+    opacity: 1; 
+    transform: rotateZ(270deg);
+   }
+   86%,96%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 1;
+    transform: rotateZ(360deg);
+   }
+  
+
+}
+
+#lineanime{
+    width: 200px;
+    height: 5px; 
+    background-color: #f9004f;
+    opacity: 0;
+    animation-name: lineart;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes lineart{
+     0%{
+        width: 200px; 
+        opacity: 0;
+     }
+     100%{
+        opacity: 1;
+        width: 0px;
+     }
+}
+
+#images{
+    width: 300px;
+    height: 300px ;
+    background-color: black;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1vw;
+    padding: 2vw;
+   
+}
+.wrapper{
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    gap: 2vw;
+
+    
+    
+}
+#imgdiv{
+    width: 100%;
+    height: 100%; 
+ 
+}
+#imgdiv img{
+    width: 300px;
+    height: 300px; 
+   
+    object-fit: cover;
+}
+
+#about{
+   
+   position: absolute;
+    top: 0%;
+    width: 100%;
+    height: auto; 
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+#aboutwrapper{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.sections{
+   width: 30%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   gap: 2vw;
+
+
+}
+#barsimg{
+    width: 28vw;
+    height: 38vw;
+    border-radius: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#barsimg img{
+       width: 100%;
+       height: 100% ;
+       object-fit: cover;
+       object-position: center;
+
+}
+#bars{
+    transform: translateY(4vw);
+    transition: .5s;
+}
+#bars1{
+    transform: translateY(-280vw);
+}
