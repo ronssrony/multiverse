@@ -3,6 +3,7 @@ document.addEventListener('contextmenu',function(e){
   e.preventDefault(); 
 }) ;
 
+ console.log("Hello merge");
 
 
 
